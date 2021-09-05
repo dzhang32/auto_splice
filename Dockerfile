@@ -17,9 +17,14 @@ RUN mkdir /tools \
     && cd build/ \
     && cmake .. \
     && make \
-    && chown -R rstudio:rstudio /tools
+    && chown -R rstudio:rstudio /tools \
+    && chmod -R 755 /tools
     
-# install R packages, dasper
-RUN Rscript -e "BiocManager::install('dzhang32/dasper')"
-    -e "
+# install R packages, dasper, rstan, and leafcutter
+# needed to manually install DirichletMultinomial, Rcpp for leafcutter
+RUN Rscript -e "install.packages(c('rstan', 'Rcpp'))" \
+    -e "BiocManager::install('DirichletMultinomial')" \
+    -e "BiocManager::install('davidaknowles/leafcutter/leafcutter', dependencies = TRUE, upgrade_dependencies = TRUE)" \
+    -e "BiocManager::install('dzhang32/dasper')
+    
     
