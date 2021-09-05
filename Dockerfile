@@ -2,9 +2,9 @@ FROM bioconductor/bioconductor_docker:RELEASE_3_13
 
 # need cmake for installing 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-    && cmake \
-    && apt-get clean
+    && apt-get install -y --no-install-recommends cmake \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # install leafcutter and dependencies regtools and samtools into /tools
 RUN mkdir /tools \
