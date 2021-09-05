@@ -25,6 +25,6 @@ RUN mkdir /tools \
 RUN Rscript -e "install.packages(c('rstan', 'Rcpp'))" \
     -e "BiocManager::install('DirichletMultinomial')" \
     -e "BiocManager::install('davidaknowles/leafcutter/leafcutter', dependencies = TRUE, upgrade_dependencies = TRUE)" \
-    -e "BiocManager::install('dzhang32/dasper')
+    -e "BiocManager::install('dzhang32/dasper')"
     
     
