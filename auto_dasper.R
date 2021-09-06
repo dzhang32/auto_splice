@@ -4,6 +4,7 @@
 
 library(optparse)
 library(dasper)
+library(magrittr)
 library(readr)
 
 # Set arguments -----------------------------------------------------------
