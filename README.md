@@ -12,16 +12,17 @@ This repository contains the instructions to create the [auto_splice docker imag
 
 ```
 # you may need to replace "docker" with "sudo docker"
-docker run dzhang32/auto_splice:0.1 Rscript -e "packageVersion('leafcutter')"
-docker run dzhang32/auto_splice:0.1 Rscript -e "packageVersion('dasper')"
+docker run dzhang32/auto_splice:1.0 Rscript -e "packageVersion('leafcutter')"
+docker run dzhang32/auto_splice:1.0 Rscript -e "packageVersion('dasper')"
+
 ```
 
 ## Running auto_dasper.R
 
 ```
-docker run dzhang32/auto_splice:0.3 Rscript /home/rstudio/auto_dasper.R --help
-```
+docker run dzhang32/auto_splice:1.0 Rscript /home/rstudio/auto_splice/auto_dasper.R --help
 
+```
 
 ## Start R Studio server instance on this docker image
 
