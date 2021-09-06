@@ -41,5 +41,5 @@ RUN mkdir -p /data/gtf/ \
     && chown -R rstudio:rstudio /data \
     && chmod -R 755 /data
 	
-	
-        
+# copy auto_splice into rstudio ~
+COPY --chown=rstudio:rstudio . /home/rstudio/auto_splice        
