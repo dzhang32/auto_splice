@@ -1,4 +1,4 @@
-# Automated aberrant and differential splicing analysis
+# Docker image for running leafcutter and dasper
 
 ## Contents
 
