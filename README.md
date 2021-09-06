@@ -15,6 +15,6 @@ docker run dzhang32/auto_splice:0.1 Rscript -e "packageVersion('leafcutter')"
 docker run dzhang32/auto_splice:0.1 Rscript -e "packageVersion('dasper')"
 ```
 
-## Start RStudio server instance on this docker image
+## Start R Studio server instance on this docker image
 
 In order to run `leafcutter` or `dasper`, you may want to start an RStudio server instance on this docker image. This docker image inherits from [rocker](https://github.com/rocker-org/rocker) and has RStudio Server pre-installed. My guide on how to set-up RStudio server within a rocker-based image on a remote server can be found [here](https://dzhang32.github.io/rutils/articles/rocker_setup.html). Additionally, you may find the [Bioconductor docker help page](https://www.bioconductor.org/help/docker/) useful too. 
