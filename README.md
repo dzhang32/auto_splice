@@ -6,7 +6,7 @@ This repository contains the instructions to create the [auto_splice docker imag
  
   1. A working installation of [leafcutter](https://github.com/davidaknowles/leafcutter) and [dasper](https://github.com/dzhang32/dasper). This includes the `leafcutter` dependencies `regtools` and `samtools` in the directory `/tools/`.
   2. An ".exons" file created by applying the leafcutter script [gtf_to_exons.R](http://davidaknowles.github.io/leafcutter/articles/Usage.html#step-3--differential-intron-excision-analysis) to the [Ensembl v104 GTF](http://ftp.ensembl.org/pub/release-104/gtf/homo_sapiens/Homo_sapiens.GRCh38.104.gtf.gz). This is stored in the directory `/data/gtf/`.
-  3. An "auto_dasper.R" script for running `dasper` stored in the directory `/home/rstudio/`.
+  3. An "auto_dasper.R" script for running `dasper` stored in the directory `/home/rstudio/auto_splice`.
 
 ## Check version of leafcutter and dasper installed
 
