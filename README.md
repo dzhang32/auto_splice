@@ -11,6 +11,7 @@ This repository contains the instructions to create the [auto_splice docker imag
 ## Check version of leafcutter and dasper installed
 
 ```
+
 # you may need to replace "docker" with "sudo docker"
 docker run dzhang32/auto_splice:1.0 Rscript -e "packageVersion('leafcutter')"
 docker run dzhang32/auto_splice:1.0 Rscript -e "packageVersion('dasper')"
@@ -20,6 +21,7 @@ docker run dzhang32/auto_splice:1.0 Rscript -e "packageVersion('dasper')"
 ## Running auto_dasper.R
 
 ```
+
 docker run dzhang32/auto_splice:1.0 Rscript /home/rstudio/auto_splice/auto_dasper.R --help
 
 ```
